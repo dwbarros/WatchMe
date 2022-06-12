@@ -21,6 +21,7 @@ export function App() {
     <div style={{ display: 'flex', flexDirection: 'row' }}>
 
       <SideBar
+        selectedGenreId={selectedGenreId}
         selectedGenre={selectedGenre}
         setSelectedGenreId={setSelectedGenreId}
       />

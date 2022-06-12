@@ -16,11 +16,12 @@ export function App() {
   const [selectedGenreId, setSelectedGenreId] = useState(1);
   const [selectedGenre, setSelectedGenre] = useState<GenreResponseProps>({} as GenreResponseProps);
 
-
+  
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
 
       <SideBar
+        selectedGenreId={selectedGenreId}
         selectedGenre={selectedGenre}
         setSelectedGenreId={setSelectedGenreId}
       />
